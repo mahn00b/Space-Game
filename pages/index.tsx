@@ -1,19 +1,13 @@
 import React, { Component } from 'react'
-import '../public/assets/css/index.css'
+import World from '../structure/world'
 
-import Link from 'next/link'
+import '../public/assets/css/index.css'
 
 export default class Index extends Component<any, any> {
   render() {
     return (
       <div>
-        <div> Go to:</div><br />
-        <Link href="a">
-          <div className="blue-text">a</div>
-        </Link>
-        <Link href="b">
-          <div className="blue-text">b</div>
-        </Link>
+        <World />
       </div>
     )
   }
